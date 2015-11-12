@@ -8,8 +8,10 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 
 resolvers += Resolver.sonatypeRepo("releases")
 
+enablePlugins(JavaAppPackaging)
+
 libraryDependencies ++= Seq(
-  "com.typesafe" % "config" % "1.3.0",
-  "net.ceedubs" %% "ficus" % "1.1.2",
-  "info.mukel" %% "telegrambot4s" % "1.0.1-SNAPSHOT"
+"com.typesafe" % "config" % "1.3.0",
+"net.ceedubs" %% "ficus" % "1.1.2",
+"info.mukel" %% "telegrambot4s" % "1.0.1-SNAPSHOT"
 )
