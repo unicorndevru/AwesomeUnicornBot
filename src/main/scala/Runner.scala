@@ -1,5 +1,12 @@
-import org.unicorndevru.telegram.bot.{ConfigWrapper, UnicornBot}
+import com.unicorn.bot.UnicornSampleBot
 
 object Runner extends App {
-  UnicornBot(ConfigWrapper.token).run()
+
+  val token = sys.env.getOrElse("TTOKEN","EMPTY")
+
+  val bot = new UnicornSampleBot(token)
+
+  bot.run()
+
+
 }

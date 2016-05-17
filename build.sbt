@@ -4,14 +4,6 @@ version := "0.1"
 
 scalaVersion := "2.11.7"
 
-resolvers += Resolver.sonatypeRepo("snapshots")
+resolvers += "jitpack" at "https://jitpack.io"
 
-resolvers += Resolver.sonatypeRepo("releases")
-
-enablePlugins(JavaAppPackaging)
-
-libraryDependencies ++= Seq(
-"com.typesafe" % "config" % "1.3.0",
-"net.ceedubs" %% "ficus" % "1.1.2",
-"info.mukel" %% "telegrambot4s" % "1.0.1-SNAPSHOT"
-)
+libraryDependencies += "com.github.mukel" %% "telegrambot4s" % "1.1.2-SNAPSHOT"
